@@ -1,5 +1,8 @@
 {
 	"messages": {
 		"COOLDOWN_MESSAGE": "You are on `<duration>` cooldown!"
+	},
+	"BugReport": {
+		"CHANNEL_ID": ""
 	}
 }
