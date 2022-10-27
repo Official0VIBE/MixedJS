@@ -28,5 +28,26 @@ fs.readdirSync('./handlers').forEach((handler) => {
   require(`./handlers/${handler}`)(client)
 });
 
+console.log(`▏ GinixBase » Connecting to the database...`)
+
+const MongoDB = require('mongodb');
+
+const Mongoose = require('mongoose');
+
+console.log(`▏ FNLBase » Fetching the (URI)`);
+const uri = "mongodb+srv://f5:19827592@cluster0.1yjgllj.mongodb.net/?retryWrites=true&w=majority";
+console.log(`▏ FNLBase » (URI) Has been fetched\n▏ URI » ${uri}`);
+
+
+const dbclient = new MongoDB.MongoClient(uri, {
+	useNewUrlParser: true, useUnifiedTopology: true, serverApi: MongoDB.ServerApiVersion.v1
+})
+
+try {
+	dbclient.connect()
+	console.log(`▏ GinixBase » Database has been connected`);
+} catch (error) {
+  console.log(error);
+}
 
 client.login(process.env.TOKEN)
