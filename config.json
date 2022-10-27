@@ -4,5 +4,8 @@
 	},
 	"BugReport": {
 		"CHANNEL_ID": ""
+	},
+	"MONGODB": {
+		"URI": ""
 	}
 }
