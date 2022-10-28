@@ -28,7 +28,7 @@ fs.readdirSync('./handlers').forEach((handler) => {
   require(`./handlers/${handler}`)(client)
 });
 
-console.log(`▏ GinixBase » Connecting to the database...`)
+console.log(`▏ FNLBase » Connecting to the database...`)
 
 const MongoDB = require('mongodb');
 
