@@ -35,7 +35,7 @@ const MongoDB = require('mongodb');
 const Mongoose = require('mongoose');
 
 console.log(`▏ FNLBase » Fetching the (URI)`);
-const uri = config.MongoDB.URI;
+const uri = config.MONGODB.URI;
 console.log(`▏ FNLBase » (URI) Has been fetched\n▏ URI » ${uri}`);
 
 
