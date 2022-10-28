@@ -45,7 +45,7 @@ const dbclient = new MongoDB.MongoClient(uri, {
 
 try {
 	dbclient.connect()
-	console.log(`▏ GinixBase » Database has been connected`);
+	console.log(`▏ FNLBase » Database has been connected`);
 } catch (error) {
   console.log(error);
 }
