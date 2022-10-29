@@ -7,5 +7,10 @@
 	},
 	"MONGODB": {
 		"URI": ""
+	},
+	"suggestions": {
+		"SuggestionChannel": "",
+		"SuggestionLogs": "",
+		"SuggestionStaffRole": ""
 	}
 }
